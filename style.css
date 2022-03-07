@@ -1,0 +1,165 @@
+*navbar */
+.navbar{
+  position: relative;
+  color: white !important;
+
+}
+.navbar-brand{
+  font-family: viga;
+  font-size: 32px;
+  color: white !important;
+}
+.navbar-collapse, .nav-link{
+    color: white !important;
+}
+
+
+
+/* jumbotrom */
+
+.jumbotron{
+  background-image: url(img/pc.jpg);
+  background-size: cover;
+  height: 540px;
+  text-align: center;
+  position: relative;
+  opacity: 80%;
+  color: #FFBD35;
+  font-size: 40px;
+}
+
+.jumbotron .container{
+  position: relative;
+  z-index: 1;
+}
+.jumbotron .container h3{
+    color: #FFBD35;
+    text-align: left;
+}
+.jumbotron .container p{
+    color: #FFBD35;
+    text-align: left;
+}
+
+.jumbotron .display-4{
+  color: #FFBD35;
+  background: white;
+  text-align: center;
+  margin-top: 150px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0.7);
+  margin-bottom: 30px;
+  font-size: 40px;
+  
+}
+
+/* info panel */
+.info-panel{
+  box-shadow: 0 3px 10px rgb(0, 0,0);
+  border-radius: 12px;
+  margin-top: 50px;
+  background-color: white;
+  padding: 30px;
+}
+
+.info-panel img{
+  width: 100px;
+  height:100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.info-panel a{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #FFBD35;
+}
+.info-panel p{
+  font size: 14px;
+  color: #ACACAC;
+  margin-top: -5px;
+}
+
+
+/* info-panel*/
+
+.workingspace{
+  margin-top: 120px;
+  text-align: center;
+  
+}
+.workingspace h3{
+  font-size: 52px;
+  font-size: 200;
+  margin-top: 30px;;
+}
+
+.workingspace .col img{
+  height: 350px;
+  width: 500px;
+}
+.workingspace p{
+  color: #ACACAC;
+  font-weight: 200;
+  font: 18px;
+  margin: 25px 0;
+}
+.bb{
+  width: 100%;
+  background: #FFBD35 !important;
+  height: 50px;
+
+}
+
+
+
+
+
+
+
+
+/* VERSI DESKTOP*/
+
+@media (min-width: 992px) {
+  .navbar-brand, .nav-link{
+    color:white !important;
+    
+  }
+  .nav-link{
+    text-transform: uppercase;
+    margin-left: 30px;
+    
+  }
+  
+  .nav-link:hover::after{
+    content: '';
+    border-bottom: 3px solid white;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .jumbotron{
+    margin-top: -75px;
+    height: 640px;
+  }
+
+  .workingspace {
+    text-align: left;
+  }
+  .jumbotron .display-4{
+    color: #FFBD35;
+    background: white;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 150px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0.7);
+    margin-bottom: 30px;
+    
+    
+  }
+}
+
+
