@@ -1,0 +1,55 @@
+<script>
+    class Gempa{
+       constructor(lokasi, skala){
+           this.lock = lokasi;
+           this.skl = skala;
+       }
+
+       dampak(dmp){
+           if(this.skl == 1 || this.skl <= 2) dmp = 'dampak tidak terasa';
+           else if(this.skl == 3 || this.skl<= 4) dmp  = 'bangunan retak';
+           else if(this.skl == 5 ||this.skl <=6) dmp = 'bangunan roboh';
+           else if(this.skl >= 6) dmp = 'bangunan roboh dan berpotensi terjadinya sunami';
+           else dmp ='tidak terjadi gempa';
+
+
+           document.write(
+               `Lokasi Gempa : ${this.lock} <br>
+               <br> Skala Gempa : ${this.skl}
+               <br> Dampak Gempa : ${dmp}<hr>`
+           )
+       
+       }
+    
+
+       
+    }
+    let gempa1 = new Gempa( 'Osaka-Jepang' , 2);
+    let gempa2 = new Gempa( 'Daerah Noto di Prefektur Ishikawa' , 7);
+    let gempa3 = new Gempa ('230 km BaratLaut MALUKUTENGGARABRT', 5);
+    let gempa4 = new Gempa ('67 km Tenggara TAHUNA-KEP.SANGIHE-SULUT', 5);
+    let gempa5 = new Gempa ('67 km TimurLaut SABURAIJUA-NTT', 5);
+    let gempa6 = new Gempa ('86 km TimurLaut MALUKUBRTDAYA',6);
+    let gempa7 = new Gempa ('82 km BaratDaya CALANG-ACEHJAYA', 4);
+    let gempa8 = new Gempa ('71 km BaratDaya SARMI-PAPUA', 3);
+    let gempa9 = new Gempa ('Lepas Pantai Prefektur Miyagi',1);
+    let gempa10 = new Gempa ('Laut Hyuganada',2);
+    
+    
+    
+
+    gempa1.dampak();
+    gempa2.dampak();
+    gempa3.dampak();
+    gempa4.dampak();
+    gempa5.dampak();
+    gempa6.dampak();
+    gempa7.dampak();
+    gempa8.dampak();
+    gempa9.dampak();
+    gempa10.dampak();
+
+
+
+    
+</script>
